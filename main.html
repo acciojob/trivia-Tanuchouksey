@@ -1,16 +1,78 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Question</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
 
+        .quotation {
+            max-width: 600px;
+            margin: 10px auto;
+            padding: 15px;
+            border-left: 8px solid green;
+            background-color: #f8fffe;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .question-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
+        }
+
+        .question {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+
+        .options {
+            list-style: none;
+            padding: 0;
+        }
+
+        .options li {
+            margin-bottom: 10px;
+        }
+
+        .options input[type="radio"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <div class="question-container">
+        <div class="question">
+            <label for="question">What is the capital of India?</label>
+        </div>
+        <ul class="options">
+            <li>
+                <label>
+                    <input type="radio" name="capital" value="new-delhi"> New Delhi
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="capital" value="mumbai"> Mumbai
+                </label>
+            </li>
+        </ul>
+    </div>
+
+    <blockquote class="quotation">
+        "New Delhi is the capital of India and an administrative district of NCT Delhi." - Wikipedia
+    </blockquote>
 
 </body>
-
 </html>
